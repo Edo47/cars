@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --dark-gray: #242424;
+    --light-gray: #666666;
+    --alpha-gray: #0000001a;
+    --dark-alpha-gray: #000000b3;
+}
+
+* {
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    outline: none; border: none;
+    margin: 0; padding: 0;
+    transition: all .2s linear; 
+    font-family: 'Popins', sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--light-gray);
+}
+
+
+section {
+    padding: 2rem 9%;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--dark-gray);
+    color: var(--white);
+    padding: .8rem 3rem;
+    border: .2rem solid var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    color: var(--dark-gray);
+    background: var(--light-gray);
+    transform: scale(1.1);
+}
+
+
+/* ==================== header ==================== */
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    top: 0; left: 0; right: 0;
+    justify-content: space-between;
+    background: var(--dark-gray);
+    padding: 2rem 9%;
+}
+
+header .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+header .title span {
+    color: var(--light-gray);
+}
+
+header .title img {
+    position: absolute;
+    top: 8px;
+    left: 115px;
+    width: 50px;
+    height: 50px;
+}
+
+header .title img:hover {
+    transform: scale(1.1);
+}
+
+header .navbar a {
+    margin: 0 .8rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+header .navbar a:hover {
+    color: var(--light-gray);
+}
+
+header .icons i {
+    margin-right: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+header .icons i:hover {
+    color: var(--light-gray);
+    transform: scale(1.2);
+}
+
+header .icons .fa-car {
+    color: #acacac;
+}
+
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 60px;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: var(--alpha-gray);
+    color: var(--dark-gray);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+h1 {
+    margin-top: 55px;
+}
+
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container .box {
+    width: 30%;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem var(--alpha-gray);
+    overflow: hidden;
+}
+
+.box-container .box img {
+    width: 100%;
+    height: 45rem;
+}
+
+.box-container .box .content {
+    padding: 2rem;
+}
+
+.box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--dark-gray);
+}
+
+.box-container .box .content h3 i {
+    color: var(--light-gray);
+}
+
+.box-container .box .content .price {
+    font-size: 2rem;
+    color: var(--dark-gray);
+    padding-top: 1rem;
+}
+
+
+.box-container .box .content .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+/* ============ footer =========== */
+footer {
+    background: var(--dark-gray);
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--white);
+}

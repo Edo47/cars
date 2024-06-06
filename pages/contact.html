@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../stylesheets/contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="title">
+            <img src="../images/CarIcon.png" alt="car">
+            <span>c</span>ar <span>s</span>tore
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">home</a>
+            <a href="../pages/auto.html">buy a car</a>
+            <a href="../pages/offer.html">offer</a>
+            <a href="../pages/contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            <i class="fa-solid fa-car"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+
+        <h1 class="heading">
+            <span>contact</span>
+            <span>us</span> 
+        </h1>
+
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" 
+            value="cf594dc7-affc-4013-9548-deb83e11915e">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name" name="name" id="">
+                <input type="email" placeholder="email" name="email" id="">
+                <input type="number" placeholder="number" name="number" id="">
+            </div>
+
+            <textarea placeholder="message"></textarea>
+            <input type="submit" value="send message" class="btn" name="send">
+        </form>
+
+
+        <footer>
+            <p>created by <span>eduard davtyan</span> | all rights reserved! </p>
+        </footer>
+        
+</body>
+</html>
